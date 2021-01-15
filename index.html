@@ -4,9 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>JSSample</title>
+    <title>ElementSample</title>
   </head>
   <body>
-    <script type="text/javascript" src="main.js"></script>
+    <div id="cards-container">
+      <div class="card" id="primary-card">こんにちは</div>
+      <div class="card">こんばんは</div>
+    </div>
+
+    <script>
+      // JavaScript
+      // idをもとに要素を ひとつだけ 取得する。
+      const card = document.getElementById("primary-card");
+
+      card.textContent = "こんばんは";
+    </script>
   </body>
 </html>
